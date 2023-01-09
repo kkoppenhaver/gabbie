@@ -134,10 +134,24 @@ header {
   .off-canvas.visible {
     visibility: visible;
     transform: translateX(0); }
+  .off-canvas ul {
+    list-style: none;
+    padding-left: 0; }
+    .off-canvas ul .sub-menu {
+      margin-left: 20px;
+      margin-top: 20px; }
+    .off-canvas ul li {
+      margin-bottom: 20px; }
+      .off-canvas ul li a {
+        color: black;
+        font-size: 15px;
+        font-weight: 700;
+        text-decoration: none; }
   .off-canvas .menu-header {
     display: flex;
     justify-content: space-between;
     align-items: center; }
   .off-canvas .close {
+    cursor: pointer;
     width: 100%;
     max-width: 25px; }

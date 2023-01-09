@@ -23,6 +23,16 @@
 						</svg>
 					</div>
 				</div>
+
+				<div class="main-menu">
+					<?php 
+					    wp_nav_menu( 
+					        array( 
+					            'theme_location' => 'main-menu'
+					        ) 
+					    ); 
+					?>
+				</div>
 			</aside>
 		</div><!-- #primary -->
 	</div><!-- #content -->

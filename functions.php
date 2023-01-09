@@ -14,3 +14,11 @@ function hide_admin_bar() {
 	show_admin_bar( false );
 }
 add_action( 'init', 'hide_admin_bar' );
+
+function my_custom_menu() {
+    register_nav_menus(
+        array(
+            'main-menu' => _( 'Main Menu' )        )
+    );
+}
+add_action( 'init', 'my_custom_menu' );
