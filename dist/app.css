@@ -6,8 +6,7 @@ body.home .single-tag {
   background-repeat: no-repeat;
   background-position: center center;
   height: 100vh;
-  position: relative;
-  width: 50vw; }
+  position: relative; }
   body.home .single-tag:hover {
     cursor: pointer; }
     body.home .single-tag:hover .overlay {
