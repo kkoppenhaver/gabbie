@@ -10,6 +10,9 @@
 
 ?>
 			</main><!-- #main -->
+			<aside class="off-canvas">
+					<h1>Sidebar Menu</h1>
+			</aside>
 		</div><!-- #primary -->
 	</div><!-- #content -->
 
