@@ -11,7 +11,18 @@
 ?>
 			</main><!-- #main -->
 			<aside class="off-canvas">
-					<h1>Sidebar Menu</h1>
+				<div class="menu-header">
+					<div class="search">
+						<a href="<?php echo get_search_link(); ?>">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+						</a>
+					</div>
+					<div class="close">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor">
+    						<path d="M17.947 16l7.387 7.387v1.947h-1.947l-7.387-7.387-7.387 7.387h-1.947v-1.947l7.387-7.387-7.387-7.387v-1.947h1.947l7.387 7.387 7.387-7.387h1.947v1.947l-7.387 7.387z"></path>
+						</svg>
+					</div>
+				</div>
 			</aside>
 		</div><!-- #primary -->
 	</div><!-- #content -->

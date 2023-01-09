@@ -47,3 +47,44 @@ header {
 		bottom: 11px;
 	}
 }
+
+.search {
+	svg {
+		stroke: black;
+	}
+}
+
+.off-canvas {
+	-webkit-overflow-scrolling: touch;
+    background-color: white;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 20px 30px 64px;
+    transform: translateX(350px);
+    transition: transform .4s ease;
+    width: 350px;
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    top: 0;
+    box-sizing: border-box;
+
+    transition: all .4s ease;
+    visibility: hidden;
+
+    &.visible {
+    	visibility: visible;
+    	transform: translateX(0);
+    }
+
+    .menu-header {
+    	display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+    }
+
+    .close {
+    	width: 100%;
+	    max-width: 25px;
+    }
+}

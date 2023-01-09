@@ -19,5 +19,14 @@ document.addEventListener('DOMContentLoaded', function () {
     	}
     }
   });
+
+
+  document.querySelector('.burger').addEventListener('click', function(evt){
+  	document.querySelector('.off-canvas').classList.add('visible');
+  });
+
+  document.querySelector('.off-canvas .close').addEventListener('click', function(evt){
+  	document.querySelector('.off-canvas').classList.remove('visible');
+  });
 }, false);
 

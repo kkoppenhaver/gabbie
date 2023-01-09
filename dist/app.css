@@ -111,3 +111,33 @@ header {
     top: 11px; }
   .burger:after {
     bottom: 11px; }
+
+.search svg {
+  stroke: black; }
+
+.off-canvas {
+  -webkit-overflow-scrolling: touch;
+  background-color: white;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 20px 30px 64px;
+  transform: translateX(350px);
+  transition: transform .4s ease;
+  width: 350px;
+  z-index: 100;
+  position: fixed;
+  right: 0;
+  top: 0;
+  box-sizing: border-box;
+  transition: all .4s ease;
+  visibility: hidden; }
+  .off-canvas.visible {
+    visibility: visible;
+    transform: translateX(0); }
+  .off-canvas .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .off-canvas .close {
+    width: 100%;
+    max-width: 25px; }
