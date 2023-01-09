@@ -1,3 +1,80 @@
+.archive-area {
+  display: block;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-top: 100px; }
+  .archive-area .term-name {
+    align-items: center;
+    display: flex;
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 0px; }
+  .archive-area .post-container {
+    margin-top: 80px; }
+  .archive-area .single-post {
+    margin-bottom: 40px; }
+    .archive-area .single-post .featured-image {
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+      height: 320px;
+      flex-basis: 40%;
+      margin-right: 10%; }
+    .archive-area .single-post .post-info {
+      flex-basis: 40%; }
+      .archive-area .single-post .post-info h2 {
+        color: #15171a;
+        font-size: 28px;
+        font-size: 28px;
+        font-weight: 800;
+        margin-top: 0; }
+      .archive-area .single-post .post-info .excerpt {
+        color: #15171a;
+        font-size: 16px;
+        line-height: 26px; }
+    .archive-area .single-post .publication-logo {
+      background-size: cover;
+      background-position: center center;
+      border-radius: 25px;
+      height: 50px;
+      width: 50px; }
+    .archive-area .single-post .read-more-link {
+      align-items: center;
+      color: #15171A;
+      font-size: 16px;
+      display: inline-flex;
+      font-weight: 700;
+      gap: 4px;
+      margin-left: -2px;
+      text-transform: lowercase; }
+    .archive-area .single-post .read-more {
+      display: inline-flex;
+      width: 35%;
+      justify-content: space-between; }
+  .archive-area .term-description {
+    font-size: 17px; }
+  .archive-area a {
+    text-decoration: none;
+    display: flex;
+    max-height: 400px;
+    margin-bottom: 40px; }
+    .archive-area a:hover {
+      opacity: .8; }
+  .archive-area .pagination-container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center; }
+  .archive-area .navigation.pagination {
+    display: inline-block; }
+  .archive-area .nav-links {
+    display: flex; }
+    .archive-area .nav-links .page-numbers {
+      color: black;
+      margin-right: 40px; }
+      .archive-area .nav-links .page-numbers.current {
+        opacity: .25;
+        text-decoration: underline; }
+
 body.home .tag-feed {
   display: flex; }
 
