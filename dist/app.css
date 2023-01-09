@@ -1,0 +1,114 @@
+body.home .tag-feed {
+  display: flex; }
+
+body.home .single-tag {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+  width: 50vw; }
+  body.home .single-tag:hover {
+    cursor: pointer; }
+    body.home .single-tag:hover .overlay {
+      opacity: .25; }
+  body.home .single-tag .overlay {
+    background-color: #000;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    transition: opacity 0.25s linear; }
+  body.home .single-tag .tag-info {
+    position: relative;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 45px 45px 60px; }
+    body.home .single-tag .tag-info:before {
+      background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.75));
+      background-repeat: no-repeat;
+      height: 150%;
+      z-index: -1;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+  body.home .single-tag h2 {
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: -0.35px;
+    margin-bottom: 0;
+    -webkit-font-smoothing: antialiased; }
+  body.home .single-tag p {
+    color: white;
+    font-size: 17px;
+    line-height: 24px;
+    margin-top: 12px;
+    opacity: .7; }
+
+body.home .tns-controls {
+  display: flex;
+  position: absolute;
+  z-index: 11;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 10px;
+  box-sizing: border-box; }
+  body.home .tns-controls button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    box-shadow: none;
+    padding: 8px 10px; }
+    body.home .tns-controls button svg {
+      fill: white;
+      stroke: transparent; }
+    body.home .tns-controls button:disabled {
+      opacity: 0; }
+
+body {
+  font-family: Raleway,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+  margin: 0; }
+
+header {
+  background-color: rgba(255, 255, 255, 0.55);
+  box-sizing: border-box;
+  padding: 10px 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.site-name {
+  font-size: 24px;
+  font-weight: 800; }
+
+.burger {
+  background-color: white;
+  border: 2px solid #d9d9d9;
+  cursor: pointer;
+  flex-shrink: 0;
+  height: 30px;
+  position: relative;
+  width: 30px; }
+  .burger:before, .burger:after {
+    background-color: #1a1a1a;
+    content: "";
+    height: 2px;
+    left: 9px;
+    position: absolute;
+    width: 12px; }
+  .burger:before {
+    top: 11px; }
+  .burger:after {
+    bottom: 11px; }

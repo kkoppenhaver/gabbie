@@ -1,0 +1,49 @@
+body {
+	font-family: Raleway,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+	margin: 0;
+}
+
+header {
+	background-color: rgba(255, 255, 255, 0.55);
+	box-sizing: border-box;
+	padding: 10px 20px;
+	position: absolute;
+	width: 100%;
+	z-index: 11;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.site-name {
+	font-size: 24px;
+	font-weight: 800;
+}
+
+.burger {
+	background-color: white;
+    border: 2px solid #d9d9d9;
+    cursor: pointer;
+    flex-shrink: 0;
+    height: 30px;
+    position: relative;
+    width: 30px;
+
+	&:before, &:after {
+		background-color: #1a1a1a;
+	    content: "";
+	    height: 2px;
+	    left: 9px;
+	    position: absolute;
+	    width: 12px;
+	}
+
+	&:before {
+		top: 11px;
+	}
+
+	&:after {
+		bottom: 11px;
+	}
+}
