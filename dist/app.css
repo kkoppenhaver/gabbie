@@ -1,44 +1,44 @@
-.archive-area {
+.archive-area, .search-container {
   display: block;
   margin: 0 auto;
   max-width: 1200px;
   padding-top: 100px; }
-  .archive-area .term-name {
+  .archive-area .term-name, .search-container .term-name {
     align-items: center;
     display: flex;
     font-size: 42px;
     font-weight: 800;
     margin-bottom: 0px; }
-  .archive-area .post-container {
+  .archive-area .post-container, .search-container .post-container {
     margin-top: 80px; }
-  .archive-area .single-post {
+  .archive-area .single-post, .search-container .single-post {
     margin-bottom: 40px; }
-    .archive-area .single-post .featured-image {
+    .archive-area .single-post .featured-image, .search-container .single-post .featured-image {
       background-size: cover;
       background-position: top center;
       background-repeat: no-repeat;
       height: 320px;
       flex-basis: 40%;
       margin-right: 10%; }
-    .archive-area .single-post .post-info {
+    .archive-area .single-post .post-info, .search-container .single-post .post-info {
       flex-basis: 40%; }
-      .archive-area .single-post .post-info h2 {
+      .archive-area .single-post .post-info h2, .search-container .single-post .post-info h2 {
         color: #15171a;
         font-size: 28px;
         font-size: 28px;
         font-weight: 800;
         margin-top: 0; }
-      .archive-area .single-post .post-info .excerpt {
+      .archive-area .single-post .post-info .excerpt, .search-container .single-post .post-info .excerpt {
         color: #15171a;
         font-size: 16px;
         line-height: 26px; }
-    .archive-area .single-post .publication-logo {
+    .archive-area .single-post .publication-logo, .search-container .single-post .publication-logo {
       background-size: cover;
       background-position: center center;
       border-radius: 25px;
       height: 50px;
       width: 50px; }
-    .archive-area .single-post .read-more-link {
+    .archive-area .single-post .read-more-link, .search-container .single-post .read-more-link {
       align-items: center;
       color: #15171A;
       font-size: 16px;
@@ -47,33 +47,33 @@
       gap: 4px;
       margin-left: -2px;
       text-transform: lowercase; }
-      .archive-area .single-post .read-more-link:hover {
+      .archive-area .single-post .read-more-link:hover, .search-container .single-post .read-more-link:hover {
         opacity: .8; }
-    .archive-area .single-post .read-more {
+    .archive-area .single-post .read-more, .search-container .single-post .read-more {
       display: inline-flex;
       width: 35%;
       justify-content: space-between; }
-  .archive-area .term-description {
+  .archive-area .term-description, .search-container .term-description {
     font-size: 17px; }
-  .archive-area a {
+  .archive-area a, .search-container a {
     text-decoration: none;
     display: flex;
     max-height: 400px;
     margin-bottom: 40px; }
-    .archive-area a h2:hover {
+    .archive-area a h2:hover, .search-container a h2:hover {
       opacity: .8; }
-  .archive-area .pagination-container {
+  .archive-area .pagination-container, .search-container .pagination-container {
     max-width: 400px;
     margin: 0 auto;
     text-align: center; }
-  .archive-area .navigation.pagination {
+  .archive-area .navigation.pagination, .search-container .navigation.pagination {
     display: inline-block; }
-  .archive-area .nav-links {
+  .archive-area .nav-links, .search-container .nav-links {
     display: flex; }
-    .archive-area .nav-links .page-numbers {
+    .archive-area .nav-links .page-numbers, .search-container .nav-links .page-numbers {
       color: black;
       margin-right: 40px; }
-      .archive-area .nav-links .page-numbers.current {
+      .archive-area .nav-links .page-numbers.current, .search-container .nav-links .page-numbers.current {
         opacity: .25;
         text-decoration: underline; }
 
@@ -151,6 +151,24 @@ body.home .tns-controls {
       stroke: transparent; }
     body.home .tns-controls button:disabled {
       opacity: 0; }
+
+.search-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-top: 100px; }
+  .search-container #searchsubmit {
+    background: black;
+    border: none;
+    box-shadow: none;
+    color: white;
+    height: 40px;
+    padding: 10px; }
+  .search-container input#s {
+    box-sizing: border-box;
+    min-width: 400px;
+    padding: 0;
+    padding-left: 10px;
+    height: 40px; }
 
 .post-heading {
   box-sizing: border-box;
