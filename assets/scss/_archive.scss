@@ -63,6 +63,10 @@
 		    gap: 4px;
 		    margin-left: -2px;
 		    text-transform: lowercase;
+
+		    &:hover {
+		    	opacity: .8;
+		    }
 		}
 
 		.read-more {
@@ -83,7 +87,7 @@
 		max-height: 400px;
 		margin-bottom: 40px;
 
-		&:hover {
+		h2:hover {
 			opacity: .8;
 		}
 	}

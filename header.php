@@ -35,8 +35,10 @@
 
 	<header>
 		<div class="site-info">
-			<div class="site-name">Gabbie Tatad</div>
-			<div class="site-description">Clever tagline will go here.</div>
+			<a href="<?php echo site_url(); ?>">
+				<div class="site-name">Gabbie Tatad</div>
+				<div class="site-description">Clever tagline will go here.</div>
+			</a>
 		</div>
 
 		<div class="burger"></div>

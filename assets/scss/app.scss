@@ -11,6 +11,11 @@ header {
 	width: 100%;
 	z-index: 11;
 
+	a {
+		color: black;
+		text-decoration: none;
+	}
+
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -18,7 +23,7 @@ header {
 
 .site-name {
 	font-size: 24px;
-	font-weight: 800;
+	font-weight: 800;	
 }
 
 .burger {
