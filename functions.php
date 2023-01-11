@@ -74,3 +74,17 @@ function get_publication_image_url() {
 
 	return false;
 }
+
+function get_publication_name() {
+	$categories = get_the_category();
+
+	foreach( $categories as $category ) {
+		if( $category->parent ) {
+			continue;
+		}
+
+		return $category->name;
+	}
+
+	return false;
+}
