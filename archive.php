@@ -2,7 +2,7 @@
 
 <div class="archive-area">
 	<h1 class="term-name"><?php the_archive_title(); ?></h1>
-	<p class="term-description">This is where the description goes.</p>
+	<p class="term-description"><?php echo get_the_archive_description(); ?></p>
 
 	<div class="post-container">
 		<?php if( have_posts() ) : ?>

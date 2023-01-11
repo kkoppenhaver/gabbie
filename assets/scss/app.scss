@@ -115,3 +115,35 @@ header {
 	    max-width: 25px;
     }
 }
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 20px;
+
+	ul {
+		list-style: none;
+	    width: 100%;
+	    padding-left: 0;
+	    display: flex;
+	}
+
+	li:not(:first-child) {
+		a:before {
+			content: "•";
+			margin-right: 10px;
+		}
+	}
+
+
+	a {
+		color: #999;
+		margin-right: 10px;
+		text-decoration: none;
+
+		&:hover {
+			color: black;
+		}
+	}
+}

@@ -21,8 +21,10 @@ add_action( 'init', 'hide_admin_bar' );
 
 function gabbie_custom_menu() {
     register_nav_menus(
-        array(
-            'main-menu' => _( 'Main Menu' )        )
+        [
+            'main-menu'   => _( 'Main Menu' ),
+            'footer-menu' => _( 'Footer' )
+        ]
     );
 }
 add_action( 'init', 'gabbie_custom_menu' );

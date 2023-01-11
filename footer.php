@@ -38,14 +38,18 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+		<div>
+			Gabbie Tatad © <?php echo date('Y'); ?>
+		</div>
 
-		<?php if ( has_nav_menu( 'footer' ) ) : ?>
+
+		<?php if ( has_nav_menu( 'footer-menu' ) ) : ?>
 			<nav aria-label="<?php esc_attr_e( 'Secondary menu', 'gabbie' ); ?>" class="footer-navigation">
 				<ul class="footer-navigation-wrapper">
 					<?php
 					wp_nav_menu(
 						array(
-							'theme_location' => 'footer',
+							'theme_location' => 'footer-menu',
 							'items_wrap'     => '%3$s',
 							'container'      => false,
 							'depth'          => 1,

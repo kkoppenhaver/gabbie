@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .archive-area, .search-container {
   display: block;
   margin: 0 auto;
@@ -325,3 +326,23 @@ header {
     cursor: pointer;
     width: 100%;
     max-width: 25px; }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px; }
+  footer ul {
+    list-style: none;
+    width: 100%;
+    padding-left: 0;
+    display: flex; }
+  footer li:not(:first-child) a:before {
+    content: "•";
+    margin-right: 10px; }
+  footer a {
+    color: #999;
+    margin-right: 10px;
+    text-decoration: none; }
+    footer a:hover {
+      color: black; }
